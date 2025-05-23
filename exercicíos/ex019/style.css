@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: blue;
+            color: white;
+        }
+
+        .especial::before {
+            content: '⚞';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+
+        .especial::after {
+            content: '⚟';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        div {
+            background-color: bisque;
+            border: 1px solid black;           
+            text-align: center;
+            width: 500px;
+            padding: 5px;
+            height: 200px;
+        }
+        span {
+            color: red;
+            text-decoration: underline;
+        }

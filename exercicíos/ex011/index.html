@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir um áudio em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audia/wav">
+    </audio>
+    <p><a href="midia/guanacast-33.mp3" target="_blank" rel="external">Caso não consiga ouvir o áudio clique aqui para baixa-lo.</a></p>
+    <h2>Inserindo vídeos hospedado localmenteno site</h2>
+    <h1>Este vídeo está hospedado no meu próprio servidor.</h1>
+    <video width="600px" controls>
+        <source src="video/meu-video.webm" type="video/webm">
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com este formato de vídeo.</p>
+    </video>
+    <p>Caso o vídeo não abra, <a href="video/meu-video.mp4" target="_blank" rel="external">clique aqui para baixa-lo.</a></p>
+    <h1>Inserindo vídeos externos</h1>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <p>Este vídeo foi incorporado através de um link externo.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D4FauN9jRog?si=ANamqJz6TvAEjKGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
