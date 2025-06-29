@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: white;
+            justify-content: center;
+        }
+        fieldset {
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required autocomplete="nome" minlength="5" maxlength="25" placeholder="Nome">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" required minlength="5" maxlength="30" placeholder="Sobrenome">
+            </p>
+            <p>
+                <label for="idata">Data de nascimento: </label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="iidade">Idade: </label>
+                <input type="number" name="idade" id="iidade" required min="18" max="30" value="18">
+            </p>
+
+            <p>
+                <label for="iest">Estado: </label>
+                <select name="estado" id="iest">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="icidade">Cidade: </label>
+                <input type="text" name="cidade" id="icidade">
+            </p>
+
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required pattern="^\([0-2]{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(xx)xxxxx-xxxx">
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <p>Cargos</p>
+            <input type="radio" name="prof" id="iprof"> <label for="iprof">Professor</label>
+            <input type="radio" name="prof" id="igeo"> <label for="igeo">Geólogo</label>
+            <input type="radio" name="prof" id="idev"> <label for="idev">Desenvolvedor</label>
+            <input type="radio" name="prof" id="iadv"> <label for="iadv">Advogado</label>
+            <input type="radio" name="prof" id="iadm"> <label for="iadm">Administrador</label>
+            
+            <p>Áreas de interesse</p>
+            <input type="checkbox" name="arhis" id="arhis"> <label for="arhis">História</label>
+            <input type="checkbox" name="argeo" id="argeo"> <label for="argeo">Geografia</label>
+            <input type="checkbox" name="arcom" id="arcom"> <label for="argeo">Computação</label>
+            <input type="checkbox" name="arlit" id="arlit"> <label for="arlit">Literatura</label>
+            <input type="checkbox" name="arfil" id="arfil"> <label for="arfil">Filosofia</label>
+            <input type="checkbox" name="areng" id="areng"> <label for="areng">Engenharia</label>
+
+            <p>
+                <label for="imsg">Fale sobre você: </label><br>
+                <textarea name="msg" id="imsg" placeholder="Faça um breve resumo sobre você" cols="30" rows="10"></textarea>
+            </p>
+        
+        </fieldset>
+            
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
