@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Política</a></li>
+                <li><a href="">Esportes</a></li>
+                <li><a href="">Comunidade</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem eius repellat? Laudantium voluptatem hic maiores rerum nisi, quisquam consequatur quaerat quis asperiores cum! Unde error laboriosam omnis suscipit vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae enim aliquid ab ipsam. Esse odit voluptate sit dolorum praesentium quibusdam deserunt laboriosam dolor, id itaque aperiam, in harum amet.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio, tempora asperiores ex sapiente quia reiciendis facilis beatae fugit rem non minima, soluta eum assumenda nisi. Est ea itaque labore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga nam illum unde harum non sint nostrum voluptatum. Eos perferendis, totam odit exercitationem temporibus repellat cum, nostrum reprehenderit expedita id ut.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus perspiciatis vel ipsa mollitia similique dolores debitis alias aperiam officia accusamus eos, ex unde quam sed temporibus excepturi a tempora inventore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi et eius sequi sint nemo tenetur eligendi harum dignissimos fugiat. Delectus perspiciatis placeat nesciunt consectetur facere. Nisi reprehenderit commodi libero ut.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quidem tempora velit rerum facere nulla explicabo cum itaque vitae, pariatur provident voluptatibus, inventore natus autem, mollitia neque sunt odit! In? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed nemo quis alias perspiciatis doloribus mollitia a et dicta! Voluptas unde iste aut distinctio reiciendis eaque natus veniam optio maxime?</p>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por <a href="#">Gabriel Braga</a> para o <a href="#">Cursoemvideo</a>.</p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {   /*'==' igual*/
+                itens.style.display = 'none'        /*'=' recebe*/
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
